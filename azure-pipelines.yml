@@ -30,9 +30,3 @@ steps:
   inputs:
     contents: '**/*.py'
     targetFolder: '$(build.artifactStagingDirectory)'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathToPublish: '$(Build.ArtifactStagingDirectory)'
-    artifactName: 'drop'
-    MaxArtifactSize: 0
